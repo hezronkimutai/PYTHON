@@ -9,6 +9,11 @@ app = Flask(__name__)
 def hello():
     return "hello world"
 
+@app.route('/hello')
+def first():
+    c = "6+7"
+    return c
+
 '''Check if the name is equal to main'''
 if __name__ == "__main__":
     '''Run he app'''
